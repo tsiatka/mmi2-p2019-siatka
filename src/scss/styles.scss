@@ -6,19 +6,20 @@ body{
 .header {
   font-family: gremlins !important;
   display:flex;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
   text-align: center;
+  padding:20px;
   h1 {
-    font-size: 60px;
-    padding:10px 20px;
+    font-size: 8vw;
+    padding:5px;
     background: -webkit-gradient(linear, left top, left bottom, from(#e93e2a), to(#c53626));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
  
   }
   img {
-    width:200px;
+    width:20vh;
     height: auto;
   }
 }
@@ -36,9 +37,10 @@ body{
     transition:opacity 0.3s, transform 0.3s;
     margin:15px;
     }
-    img {
-    width:auto;
-    height:100px;
+    
+    i {
+    font-size:55px;
+       
   }
 }
 
@@ -52,22 +54,46 @@ body{
 {
   display:flex;
   flex-direction: column;
-  padding:15px;
+  justify-content:center;
+  background:#e93e2a;
+  height: 260px;
+  width:33%;
+  color:white;
+  margin:0px 10px;
+  text-align:center; 
 }
+.section__rule:hover
+{
+  background:#c53626;
+}
+@media screen and (max-width: 600px)
+{
+  .section__rule
+  {
+    width:100%;
+    margin:15px 0px;
+  }
+  .rules
+  {
+    display:inline !important;
+}
+}
+
 .rules
 { 
 display:flex;
-flex-direction: row;
-justify-content:center;
-flex-wrap: wrap;
+justify-content:space-around;
+margin:15px 0px;
+width:100%;
  }
-.section__rule p
+.section__rule h3, p
 { 
-
 padding:10px;
  }
 
-
+h3{
+  font-size:20px;
+}
 
 * {box-sizing:border-box}
 
@@ -75,26 +101,39 @@ padding:10px;
 .slideshow {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-
+  
 .slideshow__slide {
   display: none;
-
   img{ 
     height:50vh;
     width:auto;
+    margin-bottom: 5px;
    }
 
 }
 
+
+.promo::before {
+    content: 'En promo !';
+    display: block;
+    position: absolute;
+    background: #e93e2a;
+    right: 3px;
+    top: 3px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
 }
 /* Caption text */
-.text {
+.legende {
   color: grey;
-  font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 40px;
+  bottom:1px;
+  font-size: 15px;
+  padding: 12px;
   width: 100%;
   text-align: center;
 }
@@ -106,6 +145,7 @@ text-align:center;
 padding:20px;
  }
 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -158,13 +198,13 @@ text-align:left;
 .nav button {
   padding: 6px 10px;
   margin: 8px 16px;
-  background: #c53626;
+  background: #e93e2a;
   font-size: 17px;
   border: none;
   cursor: pointer;
 }
 .nav button:hover {
-  background: #e93e2a;
+  background: #c53626;
 }
 .geo
 {
