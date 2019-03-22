@@ -5,19 +5,21 @@ body{
 }
 .header {
   font-family: gremlins !important;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   text-align: center;
-
-
   h1 {
     font-size: 60px;
     padding:10px 20px;
-    color: transparent;
-   -webkit-background-clip: text;
-   background-image: url("./../img/texture.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(#e93e2a), to(#c53626));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
   }
   img {
-    width:100px;
-    height: 100%;
+    width:200px;
+    height: auto;
   }
 }
 .section {
@@ -32,7 +34,7 @@ body{
     opacity:0;
     transform:translateY(50px) scale(0.8);
     transition:opacity 0.3s, transform 0.3s;
-margin:15px;
+    margin:15px;
     }
     img {
     width:auto;
@@ -156,10 +158,13 @@ text-align:left;
 .nav button {
   padding: 6px 10px;
   margin: 8px 16px;
-  background: red;
+  background: #c53626;
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+.nav button:hover {
+  background: #e93e2a;
 }
 .geo
 {
@@ -169,10 +174,10 @@ text-align:left;
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .nav {
-  display:flex;
-  flex-direction:column;
-}
-   .nav input {
+    display:flex;
+    flex-direction:column;
+  }
+  .nav input {
     border: 1px solid #ccc;
   }
   .geo input
@@ -181,7 +186,7 @@ text-align:left;
   }
   .geo
   {
-margin-right: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -203,14 +208,14 @@ margin-right: 20px;
 .guizmo
 { 
   background-image: url("./../img/banner2.png");
-   }
+}
 .banner h2
 { position: absolute;
-  font-size:40px;
-  width: 100%;
+  font-size:30px;
   text-align: center;
   color:white;
   text-shadow:1px 1px 2px black;
+  padding:10px;
 }
 
 
