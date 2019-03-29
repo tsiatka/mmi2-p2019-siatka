@@ -255,13 +255,18 @@ text-align:left;
 .banner h2
 { position: absolute;
   font-size:30px;
-  top: 40%;
-  width: 90%;
+  top: 50%;
+  left:0;
+  right:0;
   text-align: center;
   transform: translate(-50%, -50%);
   color:white;
   text-shadow:1px 1px 2px black;
-  padding:10px;
+  width: 100%;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  margin-top: -13px; 
 }
 
 
@@ -399,4 +404,22 @@ input[type="submit"]
 input[type="submit"]:hover
 {
   background: #c53626;
+}
+
+.story {
+  width: 90vw;
+}
+
+.story img {
+  width: 40vh;
+  float: left;
+  shape-outside:  polygon(71% 4%, 97% 16%, 93% 73%, 26% 97%, 4% 75%, 3% 16%);
+  margin-right: 20px;
+}
+
+.story p
+{
+  font-size: 20px;
+   line-height: 1.3;
+  padding: 20px;
 }
