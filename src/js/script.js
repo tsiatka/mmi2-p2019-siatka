@@ -8,7 +8,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     section.classList.add('section--reached')
   },
-  offset:'30%'
+  offset:'40%'
 })
 })
 
@@ -26,3 +26,15 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000);
 } 
+
+
+document.getElementById("navbar").addEventListener("click", navbar, false);
+
+  function navbar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
