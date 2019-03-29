@@ -29,7 +29,6 @@ function showSlides() {
 
 
 document.getElementById("navbar").addEventListener("click", navbar, false);
-
   function navbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -37,4 +36,11 @@ document.getElementById("navbar").addEventListener("click", navbar, false);
   } else {
     x.className = "topnav";
   }
+}
+
+document.getElementById("navbar").addEventListener("click", burger, false);
+function burger() {
+  var element = document.getElementById("burger");
+  element.classList.toggle("fa-times");
+  element.classList.toggle("fas");
 }

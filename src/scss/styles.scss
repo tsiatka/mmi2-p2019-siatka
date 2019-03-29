@@ -24,6 +24,12 @@ body{
     height: auto;
   }
 }
+
+h2
+{
+font-size:40px;
+    margin:15px;
+}
 .section {
   display:flex;
   flex-direction: column;
@@ -32,11 +38,9 @@ body{
   list-style-type: none;
   
    .section__title { 
-    font-size:40px;
     opacity:0;
     transform:translateY(50px) scale(0.8);
     transition:opacity 0.3s, transform 0.3s;
-    margin:15px;
     }
     
     i {
@@ -112,8 +116,6 @@ h3{
    }
 
 }
-
-
 .promo::before {
     content: 'En promo !';
     display: block;
@@ -253,7 +255,10 @@ text-align:left;
 .banner h2
 { position: absolute;
   font-size:30px;
+  top: 40%;
+  width: 90%;
   text-align: center;
+  transform: translate(-50%, -50%);
   color:white;
   text-shadow:1px 1px 2px black;
   padding:10px;
@@ -316,7 +321,7 @@ footer
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position:fixed;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -327,4 +332,71 @@ footer
     display: block;
     text-align: left;
   }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+footer .fab{
+  color:grey;
+  font-size: 40px;
+  padding:30px;
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+footer .fab:hover {
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+}
+.fa-facebook-square:hover
+{
+  color:#4267b2;
+}
+.fa-youtube:hover
+{
+color:#ff0000;
+}
+
+.fa-instagram:hover
+{
+color:#b81874;
+}
+footer p 
+{padding-top: 50px;}
+
+footer h3
+{
+  padding-top: 40px;
+  padding-bottom:10px;
+  font-style: italic; 
+}
+footer input
+{
+height:50px;}
+
+input[type="email"]
+{
+   width:50vw;
+}
+input[type="submit"]
+{
+  background: #e4172e;
+    cursor: pointer;
+        border: 0 none;
+        width:5vw;
+        color:white;
+}
+
+input[type="submit"]:hover
+{
+  background: #c53626;
 }
