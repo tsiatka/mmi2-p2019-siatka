@@ -9,6 +9,7 @@ text-align:left;
     border: none;
     margin: 8px 16px;
     font-size: 17px;
+    width:40vw;
   }
   button {
     padding: 6px 10px;
@@ -36,6 +37,7 @@ text-align:left;
     flex-direction:column;
     input {
       border: 1px solid #ccc;
+      width:90%;
     }
   }
   .geo
