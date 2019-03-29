@@ -17,7 +17,7 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("slideshow__slide");
+  var slides = document.getElementsByClassName("slide");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -30,7 +30,7 @@ function showSlides() {
 
 document.getElementById("navbar").addEventListener("click", navbar, false);
   function navbar() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("topnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {

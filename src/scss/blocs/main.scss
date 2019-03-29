@@ -1,0 +1,141 @@
+body{
+ font-family: 'Bree Serif', "Times New Roman", Helvetica, Arial, sans-serif;
+}
+
+h2
+{
+  font-size:40px;
+  margin:15px;
+}
+
+h3{
+  font-size:20px;
+}
+
+/*sections*/
+.section {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  list-style-type: none;
+  
+  .section__title { 
+    opacity:0;
+    transform:translateY(50px) scale(0.8);
+    transition:opacity 0.3s, transform 0.3s;
+  }
+    
+  i {
+    font-size:55px;  
+  }
+}
+
+.section--reached { 
+  .section__title {
+    opacity:1;
+    transform:none;
+  }
+}
+
+/*qui sommes nous*/
+.story {
+  width: 90vw;
+  img {
+    width: 40vh;
+    float: left;
+    shape-outside:  polygon(71% 4%, 97% 16%, 93% 73%, 26% 97%, 4% 75%, 3% 16%);
+    margin-right: 20px;
+  }
+  p
+  {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 20px;
+  }
+}
+
+/*section blocs rouges*/
+.rules
+{ 
+  display:flex;
+  justify-content:space-around;
+  margin:15px 0px;
+  width:100%;
+}
+
+.rule
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  background:#e93e2a;
+  height: 260px;
+  width:33%;
+  color:white;
+  margin:0px 10px;
+  text-align:center;
+  h3, p
+  { 
+   padding:10px;
+  }
+}
+
+.rule:hover
+{
+  background:#c53626;
+}
+
+@media screen and (max-width: 600px)
+{
+  .rules
+  {
+    display:inline !important;
+  }
+  .rule
+  {
+    width:100%;
+    margin:15px 0px;
+  }
+}
+
+
+
+/*banner*/
+
+.banner
+{
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  h2 { 
+    position: absolute;
+    font-size:30px;
+    top: 50%;
+    left:0;
+    right:0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-shadow:1px 1px 2px black;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px; 
+  }
+}
+
+.banner--lutte
+{
+  background-image: url("./../../img/banner.png");
+}
+
+.banner--guizmo
+{ 
+  background-image: url("./../../img/banner2.png");
+}
+

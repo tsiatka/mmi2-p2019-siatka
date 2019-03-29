@@ -1,0 +1,74 @@
+/*footer*/
+footer
+{
+  padding: 25px;
+  text-align: center;
+  p 
+  {
+    padding-top: 50px;
+  }
+  h3
+  {
+    padding-top: 40px;
+    padding-bottom:10px;
+    font-style: italic; 
+  }
+  input
+  {
+    height:50px;
+  }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+  .fab {
+    color:grey;
+    font-size: 40px;
+    padding:30px;
+    -webkit-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+  }
+ .fab:hover {
+    -webkit-transform:translate(0px,-10px);
+    -moz-transform:translate(0px,-10px);
+    -ms-transform:translate(0px,-10px);
+    -o-transform:translate(0px,-10px);
+    transform:translate(0px,-10px);
+  }
+}
+
+.fa-facebook-square:hover
+{
+  color:#4267b2;
+}
+.fa-youtube:hover
+{
+color:#ff0000;
+}
+.fa-instagram:hover
+{
+color:#b81874;
+}
+
+
+
+input[type="email"]
+{
+  width:50vw;
+}
+input[type="submit"]
+{
+  background: #e4172e;
+  cursor: pointer;
+  border: 0 none;
+  width:5vw;
+  color:white;
+}
+input[type="submit"]:hover
+{
+  background: #c53626;
+}
